@@ -28,7 +28,7 @@ with
         let (r,g,b) = this.c
         "Particle(x = " + this.x.ToString() + ", y = " + this.y.ToString() + ", xvel = " + this.xvel.ToString() + ", yvel = " + this.yvel.ToString() + ", c = (" + r.ToString() + ", " + g.ToString() + ", " + b.ToString() + "))"
 
-let updateParticle(dt: string)(p: Particle) =
+let updateParticle(dt: double)(p: Particle) =
     {
         p with
             x = p.x + p.xvel * dt
@@ -40,7 +40,7 @@ let updateParticle(dt: string)(p: Particle) =
 // Comment the function above and comment out the one below
 // to update the particles using Typescript code
 
-// let updateParticle(dt: string)(p: Particle) =
+// let updateParticle(dt: double)(p: Particle) =
 //     importMember "../js/Util.ts"
 
 let refillParticles(p: Particle array, dt: double) =
