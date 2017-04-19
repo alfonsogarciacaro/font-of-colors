@@ -74,8 +74,6 @@ let refillParticles(p: Particle array, dt: double) =
 let mutable particles = [||]
 let timestep = 0.8
 
-// loop: draw a rectange of given width and height,
-// increase width and height, wait for 100 ms, and repeat.
 let rec loop last t =
     // Comment out this line to make sure the animation runs
     // with same speed on different frame rates
